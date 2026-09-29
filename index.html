@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Tic-Tac-Toe</h1>
+    <p class="subtitle">HTML • CSS • JavaScript</p>
+
+    <div class="controls">
+      <div class="mode-toggle">
+        <button id="pvpBtn" class="mode-btn active">2 Players</button>
+        <button id="aiBtn" class="mode-btn">Vs Computer</button>
+      </div>
+    </div>
+
+    <div class="scoreboard">
+      <div class="score score-x">
+        <span class="label">X</span>
+        <span id="scoreX">0</span>
+      </div>
+      <div class="score score-draw">
+        <span class="label">Draws</span>
+        <span id="scoreDraw">0</span>
+      </div>
+      <div class="score score-o">
+        <span class="label">O</span>
+        <span id="scoreO">0</span>
+      </div>
+    </div>
+
+    <div id="status" class="status">Player X's turn</div>
+
+    <div id="board" class="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </div>
+
+    <div class="actions">
+      <button id="resetBtn" class="btn">New Round</button>
+      <button id="resetScoreBtn" class="btn btn-secondary">Reset Scores</button>
+    </div>
+
+    <footer>
+      <p>X goes first. Get 3 in a row to win.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
